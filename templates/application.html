@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +8,15 @@
     <meta name="csrf-param" content="authenticity_token" />
     <meta name="csrf-token" content="<%= authenticity_token %>" />
     <link rel="icon" href="<%= assetPath("images/obiknowsfavicondark.ico") %>">
+    <!-- Tachyons -->
+    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.9.1/css/tachyons.min.css" />
   </head>
   <body>
 
-    <div class="container">
+    <div class="">
       <%= partial("flash.html") %>
       <%= yield %>
+      <%= partial("navbar.html") %>
     </div>
 
     <%= javascriptTag("application.js") %>

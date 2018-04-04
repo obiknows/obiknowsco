@@ -58,6 +58,7 @@ func App() *buffalo.App {
 
 		app.GET("/", HomeHandler)
 		app.GET("/work", WorkHandler)
+		app.GET("/research", ResearchHandler)
 
 		app.ServeFiles("/assets", assetsBox)
 		app.GET("/routes", RoutesRoutes)
