@@ -11,6 +11,10 @@ func HomeHandler(c buffalo.Context) error {
 // WorkHandler is a function to serve up
 // the Obi Knows portfolio single page app.
 func WorkHandler(c buffalo.Context) error {
+	// Set Name
+	c.Set("name", "Obinna Nnodim")
+	c.Set("jobs", []string{"Producer", "Designer", "Developer", "Artist", "Researcher"})
+
 	return c.Render(200, r.HTML("work/index.html"))
 }
 

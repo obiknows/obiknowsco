@@ -1,6 +1,20 @@
 @import "~bootstrap/scss/bootstrap.scss";
 @import "~font-awesome/css/font-awesome.css";
 
+html {
+  background: #333333;
+}
+
 .colorbar {
   height: 1.888em;
+  
+}
+
+.colorbar-bg {
+  background-color: #333333;
+  max-height: 11vh;
+}
+
+.content {
+  margin-bottom: 12.5vh;
 }

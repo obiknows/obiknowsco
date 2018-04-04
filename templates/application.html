@@ -15,7 +15,9 @@
 
     <div class="app">
       <%= partial("flash.html") %>
-      <%= yield %>
+      <div class="content">
+        <%= yield %>
+      </div>
       <%= partial("navbar.html") %>
     </div>
 
