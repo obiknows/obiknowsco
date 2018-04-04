@@ -14,6 +14,12 @@ func WorkHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("work/index.html"))
 }
 
+// BeatsHandler is a function to serve up
+// the Obi Knows portfolio single page app.
+func BeatsHandler(c buffalo.Context) error {
+	return c.Render(200, r.HTML("beats/index.html"))
+}
+
 // ResearchHandler is a function to serve up
 // the Obi Knows Research Blog
 func ResearchHandler(c buffalo.Context) error {

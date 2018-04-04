@@ -56,10 +56,13 @@ func App() *buffalo.App {
 		}
 		app.Use(T.Middleware())
 
+		// Obi Knows Co - Main Site
 		app.GET("/", HomeHandler)
+		app.GET("/beats", BeatsHandler)
 		app.GET("/work", WorkHandler)
 		app.GET("/research", ResearchHandler)
 
+		// Admin Stuffs
 		app.ServeFiles("/assets", assetsBox)
 		app.GET("/routes", RoutesRoutes)
 	}
