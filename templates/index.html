@@ -1,192 +1,52 @@
-<style media="screen">
-  * {
-    -webkit-transition: all .38s;
-    /* Safari */
-    transition: all .38s;
-  }
-
-  .container {
-    min-width: 320px;
-  }
-
-  header {
-    background-color: #62a5ee;
-    padding: 10px 20px;
-    box-sizing: border-box;
-  }
-
-  .logo img {
-    width: 80px;
-  }
-
-  .titles h1 {
-    font-size: 30px;
-    font-weight: 300;
-    color: white;
-    margin-bottom: 13px;
-    margin-top: 5px;
-  }
-
-  .titles h2 {
-    font-weight: 300;
-    font-size: 18px;
-    display: inline-block;
-    margin: 0;
-  }
-
-  .titles a {
-    color: white;
-    text-decoration: underline;
-  }
-
-  .titles i {
-    margin-right: 5px;
-    text-decoration: none;
-  }
-
-  .titles .documentation {
-    margin-left: 28px;
-  }
-
-  .subtitle {
-    color: white;
-    margin: 0;
-    padding: 13px 0;
-    background-color: #2a3543;
-    margin-bottom: 20px;
-  }
-
-  .subtitle h3 {
-    font-size: 22px;
-    font-weight: 400;
-    margin: 0;
-  }
-
-  table {
-    font-size: 14px;
-  }
-
-  table.table tbody tr td {
-    border-top: 0;
-    padding: 10px;
-  }
-
-  .foot {
-    text-align: right;
-    text-align: right;
-    color: #c5c5c5;
-    font-weight: 300;
-  }
-
-  .foot a {
-    color: #8b8b8b;
-    text-decoration: underline;
-  }
-
-  .centered {
-    text-align: center;
-  }
-
-  @media all and (max-width: 770px) {
-    .titles h1 {
-      font-size: 25px;
-      margin: 15px 0 5px 0;
-    }
-  }
-
-  @media all and (max-width: 640px) {
-    .titles h1 {
-      font-size: 23px;
-      margin: 15px 0 5px 0;
-    }
-    .titles h2 {
-      font-size: 15px;
-    }
-    .titles .documentation {
-      margin-left: 10px;
-    }
-  }
-
-  @media all and (max-width: 530px) {
-    .titles h1 {
-      font-size: 20px;
-      margin: 5px 0;
-    }
-    .logo {
-      padding: 0
-    }
-    .logo img {
-      width: 100%
-    }
-    .titles .documentation {
-      margin-left: 0px;
-      margin-top: 5px;
-      display: block;
-    }
-  }
-</style>
-
-<header>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-1 col-sm-2 col-xs-2 logo">
-        <a href="<%= rootPath() %>"><img src="<%= rootPath() %>assets/images/logo.svg" alt=""></a>
-      </div>
-      <div class="col-md-9 col-sm-9 col-xs-10 titles">
-        <h1><%= t("welcome_greeting") %> [v0.10.3]</h1>
-        <h2>
-          <a href="https://github.com/gobuffalo/buffalo"><i class="fa fa-github" aria-hidden="true"></i> https://github.com/gobuffalo/buffalo</a>
-        </h2>
-        <h2 class="documentation">
-          <a href="http://gobuffalo.io/"><i class="fa fa-book" aria-hidden="true"></i> Documentation</a>
-        </h2>
-      </div>
-    </div>
-  </div>
-
-</header>
-
-<div class="row">
-  <div class="col-md-12">
-    <div class="subtitle">
-      <div class="container">
-        <h3>Defined Routes</h3>
-      </div>
-    </div>
-    <div class="table-responsive">
-      <table class="table table-striped">
-        <thead>
-          <tr text-align="left">
-            <th class="centered">METHOD</th>
-            <th>PATH</th>
-            <th>NAME</th>
-            <th>HANDLER</th>
-          </tr>
-        </thead>
-        <tbody>
-
-          <%= for (r) in routes { %>
-            <tr>
-              <td class="centered">
-                <%= r.Method %>
-              </td>
-              <td>
-                <%= if (r.Method != "GET" || r.Path ~= "{") { %>
-                  <%= r.Path %>
-                <% } else { %>
-                  <a href="<%= r.Path %>"><%= r.Path %></a>
-                <% } %>
-              </td>
-              <td>
-                <%= r.PathName %>
-              </td>
-              <td><code><%= r.HandlerName %></code></td>
-            </tr>
-          <% } %>
-
-        </tbody>
-      </table>
-    </div>
+<div class="container">
+  <div class="jumbotron mt-3">
+    <h1>Bottom Navbar example</h1>
+    <p class="lead">This example is a quick exercise to illustrate how the bottom navbar works.</p>
+    <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">View navbar docs &raquo;</a>
   </div>
 </div>
-<div class="foot"> <span> Powered by <a href="http://gobuffalo.io/">gobuffalo.io</a></span> </div>
+<nav class="navbar fixed-bottom navbar-expand-sm navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">
+    <!-- Obi Knows Co -->
+    <!-- obi knows svg -->
+    <img class="colorbar" src="<%= rootPath() %>assets/images/obi bar dark.svg" alt="Obi Knows Co">
+  </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+    aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarCollapse">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/">Home
+          <span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Work</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Beats</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+      <!-- <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li> -->
+      <li class="nav-item dropup">
+        <a class="nav-link dropdown-toggle" href="https://getbootstrap.com" id="dropdown10" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">More</a>
+        <div class="dropdown-menu" aria-labelledby="dropdown10">
+          <a class="dropdown-item" href="#">Food</a>
+          <a class="dropdown-item" href="#">Art</a>
+          <a class="dropdown-item" href="#">Research</a>
+          <a class="dropdown-item" href="#">Sign In</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
