@@ -57,6 +57,7 @@ func App() *buffalo.App {
 		app.Use(T.Middleware())
 
 		app.GET("/", HomeHandler)
+		app.GET("/work", WorkHandler)
 
 		app.ServeFiles("/assets", assetsBox)
 		app.GET("/routes", RoutesRoutes)

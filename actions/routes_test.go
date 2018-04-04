@@ -1,5 +1,7 @@
 package actions
 
 func (as *ActionSuite) Test_Routes_Routes() {
-	as.Fail("Not Implemented!")
+	res := as.HTML("/routes").Get()
+	as.Equal(200, res.Code)
+	as.Contains(res.Body.String(), "Welcome to Buffalo")
 }
