@@ -1,16 +1,33 @@
-<div class="container">
-  <!-- Example Jumbotron -->
-  <div class="jumbotron mt-3">
+<div class="vh-100 container">
+  <!-- Announcement Jumbotron -->
+  <div class="jumbotron" style="background: url(https://images.unsplash.com/photo-1480334026689-1ee5069c978f?ixlib=rb-0.3.5&s=2c2c5b7…&auto=format&fit=crop&w=1050&q=80) center 0;">
     <h1>Inertia EP</h1>
-    <p class="lead">Yo, I just put out the Inertia tape. Peep game</p>
+    <h3 class="lead">
+        Yo, I just put out the Inertia tape. Peep game
+    </h3>
     <a class="btn btn-lg btn-primary" href="../../components/navbar/" role="button">Click to peep game&raquo; 👀</a>
   </div>
   <!-- /example -->
+  <div class="grid-wrapper">
+    <div class="box a">A</div>
+    <div class="box b">B</div>
+    <div class="box c">C</div>
+    <div class="box d">D</div>
+    <div class="box e">E</div>
+  </div>
+</div>
+
 <style>
-  .grid-wrapper {
-    display: grid;
-    min-height: .75vh;
-    grid-gap: 10px;
+    .lead {
+        padding: 0.5em;
+        background: cadetblue;
+        width: auto;
+    }
+
+    .grid-wrapper {
+        display: grid;
+        min-height: .75vh;
+        grid-gap: 10px;
         grid-template-columns: auto auto auto auto;
         /* background-color: #fff; */
         color: #444;
@@ -29,28 +46,24 @@
         grid-column: 1 / 3;
         grid-row: 1;
     }
+
     .b {
-        grid-column: 3 ;
+        grid-column: 3;
         grid-row: 1 / 3;
     }
+
     .c {
-        grid-column: 1 ;
-        grid-row: 2 ;
+        grid-column: 1;
+        grid-row: 2;
     }
+
     .d {
         grid-column: 2;
         grid-row: 2;
     }
+
     .e {
-      grid-column: 4 ;
-      grid-row: 1 / 3;
+        grid-column: 4;
+        grid-row: 1 / 3;
     }
 </style>
-  <div class="grid-wrapper">
-    <div class="box a">A</div>
-    <div class="box b">B</div>
-    <div class="box c">C</div>
-    <div class="box d">D</div>
-    <div class="box e">E</div>
-  </div>
-</div>
