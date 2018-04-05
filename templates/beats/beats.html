@@ -1,0 +1,220 @@
+<style>
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* andd */
+/* Flex styles -------------------------------------------------*/
+header {
+  display: flex;
+  align-items: center;
+}
+
+@media (min-width: 700px) {
+ .leading {
+    display: flex;
+    align-items: center;
+  }
+}
+
+
+/* Grid styles -------------------------------------------------*/
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 30px;
+}
+
+
+/* Generic styles ----------------------------------------------*/
+body {
+  font-family: 'Quicksand', sans-serif;
+}
+
+header {
+  padding: 10px;
+  font-size: 2em;
+  color: white;
+  background-color: #333;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 20px;
+}
+
+.leading {
+  height: 240px;
+  margin-bottom: 30px;
+  padding: 30px;
+  color: white;
+  /* background: url('https://cdn.glitch.com/a5121e34-96b3-4a70-8227-040c51e64fae%2Fcat.jpg?1509635989509') center #333 no-repeat; */
+  background: url('https://images.pexels.com/photos/707697/pexels-photo-707697.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940') center #333 no-repeat;
+  background-size: cover;
+  color: white;
+  text-shadow: 0px 0px 5px #000;
+}
+
+.leading-bigtext {
+  margin-right: 60px;
+  font-weight: bold;
+  font-size: 24vw;
+}
+
+@media (min-width: 700px) {
+  .leading-bigtext {
+    font-size: 140px;
+  }
+}
+
+.leading-text {
+  max-width: 900px;
+  font-size: 1.2em;
+  line-height: 1.4em;
+}
+
+.cards {
+  max-width: 960px;
+  margin: 0 auto 30px;
+}
+
+article {
+  position: relative;
+}
+
+.article-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.beat-title {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: gold;
+  /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+
+
+</style>
+
+<head>
+  <!-- <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> -->
+</head>
+<section>
+  <header>
+    <img class="logo" src="https://emojipedia-us.s3.amazonaws.com/thumbs/120/facebook/111/crystal-ball_1f52e.png" alt="heart"
+    />
+    <h1 class="heading"><%= heading %></h1>
+  </header>
+  <main>
+    <section class="leading">
+      <p class="leading-bigtext">Sounds</p>
+      <p class="leading-text">Here's some sound fresh from the kitchen.</p>
+    </section>
+    <section class="cards">
+      <article>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/301356624&color=%232c3c5c&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <h1 class="beat-title">
+          🎵 Ghostin the shell
+        </h1>
+      </article>
+      <article>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/320283846&color=%23aa926e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <h1 class="beat-title">
+          🎵 Motions
+        </h1>
+      </article>
+      <article>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/320283846&color=%23aa926e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <h1 class="beat-title">
+          🎵 Motions
+        </h1>
+      </article>
+      <article>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/320283846&color=%23aa926e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <h1 class="beat-title">
+          🎵 Motions
+        </h1>
+      </article>
+      <article>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/320283846&color=%23aa926e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <h1 class="beat-title">
+          🎵 Motions
+        </h1>
+      </article>
+      <article>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/320283846&color=%23aa926e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <h1 class="beat-title">
+          🎵 Motions
+        </h1>
+      </article>
+      <article>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/320283846&color=%23aa926e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <h1 class="beat-title">
+          🎵 Motions
+        </h1>
+      </article>
+      <article>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/320283846&color=%23aa926e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <h1 class="beat-title">
+          🎵 Motions
+        </h1>
+      </article>
+      <article>
+        <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/320283846&color=%23aa926e&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+        <h1 class="beat-title">
+          🎵 Motions
+        </h1>
+      </article>
+    </section>
+  </main>
+</section>

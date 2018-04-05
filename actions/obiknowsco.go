@@ -15,17 +15,18 @@ func WorkHandler(c buffalo.Context) error {
 	c.Set("name", "Obinna Nnodim")
 	c.Set("jobs", []string{"Producer", "Designer", "Developer", "Artist", "Researcher"})
 
-	return c.Render(200, r.HTML("work/index.html"))
+	return c.Render(200, r.HTML("work/workpage.html"))
 }
 
 // BeatsHandler is a function to serve up
 // the Obi Knows portfolio single page app.
 func BeatsHandler(c buffalo.Context) error {
-	return c.Render(200, r.HTML("beats/index.html"))
+	c.Set("heading", "Obi Knows Beats")
+	return c.Render(200, r.HTML("beats/beats.html"))
 }
 
 // ResearchHandler is a function to serve up
 // the Obi Knows Research Blog
 func ResearchHandler(c buffalo.Context) error {
-	return c.Render(200, r.HTML("research/index.html"))
+	return c.Render(200, r.HTML("research/research.html"))
 }
