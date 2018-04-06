@@ -12,7 +12,7 @@ func HomeHandler(c buffalo.Context) error {
 // the Obi Knows portfolio single page app.
 func WorkHandler(c buffalo.Context) error {
 	// Set Name
-	c.Set("name", "Obinna Nnodim")
+	c.Set("name", "Obi Knows")
 	c.Set("jobs", []string{"Producer", "Designer", "Developer", "Artist", "Researcher"})
 
 	return c.Render(200, r.HTML("work/workpage.html"))
