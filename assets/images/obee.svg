@@ -1,0 +1,102 @@
+<svg width="300" height="300" viewBox="0 0 300 300" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>The O Bee</title>
+<desc>by the man himself</desc>
+<g id="Canvas" transform="translate(-8672 -2844)">
+<g id="Group 5.1">
+<g id="Group 3.1">
+<g id="Rectangle 2">
+<use xlink:href="#path0_fill" transform="translate(8672 2844)" fill="#333333"/>
+</g>
+</g>
+<g id="Group 4">
+<g id="Group 2.1">
+<g id="Subtract">
+<use xlink:href="#path1_fill" transform="translate(8690.75 2947.12)" fill="#EEEEEE"/>
+</g>
+</g>
+<g id="the o bee (dark bkg)">
+<g id="body">
+<g id="tail">
+<use xlink:href="#path2_fill" transform="matrix(-1 -1.22678e-16 1.22252e-16 -1 8897.35 3050.25)" fill="#E0E0E0"/>
+</g>
+<g id="mid low ab">
+<use xlink:href="#path3_fill" transform="translate(8870.82 3021.43)" fill="#E0E0E0"/>
+</g>
+<g id="mid top ab">
+<use xlink:href="#path4_fill" transform="translate(8868.89 3006.05)" fill="#E0E0E0"/>
+</g>
+<g id="top ab">
+<use xlink:href="#path5_fill" transform="translate(8867.3 2989.4)" fill="#E0E0E0"/>
+</g>
+</g>
+<g id="head shape">
+<g id="ears">
+<g id="r antenna">
+<use xlink:href="#path6_stroke" transform="matrix(0.722755 -0.691105 0.689846 0.723956 8898.95 2960.58)" fill="#E0E0E0"/>
+</g>
+<g id="l antenna">
+<use xlink:href="#path7_stroke" transform="matrix(0.722728 0.691133 -0.689874 0.723929 8864.42 2947.12)" fill="#E0E0E0"/>
+</g>
+</g>
+<g id="head">
+<use xlink:href="#path8_fill" transform="translate(8872.73 2955.45)" fill="#E0E0E0"/>
+</g>
+</g>
+<g id="wings">
+<g id="r upper wing">
+<g id="Polygon">
+<use xlink:href="#path9_fill" transform="translate(8906.63 2973.93)" fill="#E6BE6C"/>
+</g>
+<g id="Polygon 2">
+<use xlink:href="#path10_fill" transform="translate(8903.11 2974.67)" fill="#E6BE6C"/>
+</g>
+</g>
+<g id="r low wing">
+<g id="Polygon">
+<use xlink:href="#path11_fill" transform="matrix(6.11258e-17 1 1 -6.13391e-17 8900.55 2984.28)" fill="#E6BE6C"/>
+</g>
+<g id="Polygon 2.3">
+<use xlink:href="#path12_fill" transform="matrix(0.765493 0.643444 -0.64213 0.766595 8900.12 2983.38)" fill="#E6BE6C"/>
+</g>
+</g>
+<g id="l low wing">
+<g id="Polygon">
+<use xlink:href="#path13_fill" transform="matrix(-6.11258e-17 1 -1 -6.13391e-17 8874.67 2982.99)" fill="#E6BE6C"/>
+</g>
+<g id="Polygon 2.2">
+<use xlink:href="#path14_fill" transform="matrix(-0.765493 0.643444 0.64213 0.766595 8875.04 2981.87)" fill="#E6BE6C"/>
+</g>
+</g>
+<g id="l upper wing">
+<g id="Polygon 2.1">
+<use xlink:href="#path15_fill" transform="matrix(-1 0 0 1 8872.09 2973.39)" fill="#E6BE6C"/>
+</g>
+<g id="Polygon">
+<use xlink:href="#path16_fill" transform="matrix(-1 6.52466e-17 1.88913e-16 1 8868.26 2973.07)" fill="#E6BE6C"/>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_fill" d="M 0 0L 300 0L 300 300L 0 300L 0 0Z"/>
+<path id="path1_fill" fill-rule="evenodd" d="M 51.832 102.625C 80.458 102.625 103.664 79.6511 103.664 51.3123C 103.664 22.9731 80.458 0 51.832 0C 23.2061 0 0 22.9731 0 51.3123C 0 79.6511 23.2061 102.625 51.832 102.625ZM 51.832 78.4775C 66.9873 78.4775 79.2725 66.3152 79.2725 51.3123C 79.2725 36.3093 66.9873 24.147 51.832 24.147C 36.6768 24.147 24.3916 36.3093 24.3916 51.3123C 24.3916 66.3152 36.6768 78.4775 51.832 78.4775Z"/>
+<path id="path2_fill" d="M 9.92861 1.24819C 10.3917 0.634243 11.3202 0.654578 11.7559 1.28821L 19.5675 12.6473C 20.0814 13.3946 19.5464 14.4119 18.6394 14.4119L 2.26035 14.4119C 1.33078 14.4119 0.801347 13.3494 1.3611 12.6073L 9.92861 1.24819Z"/>
+<path id="path3_fill" d="M 0 0L 30.9295 0C 31.4418 0 31.8037 0.501824 31.642 0.987983L 29.0523 8.77037C 28.695 9.84422 27.6904 10.5687 26.5586 10.5687L 5.42649 10.5687C 4.10262 10.5687 2.93487 9.70196 2.55155 8.4348L 0 0Z"/>
+<path id="path4_fill" d="M 0 0L 37.2685 0C 37.7963 0 38.1594 0.530133 37.9687 1.02225L 34.7952 9.21057C 34.4031 10.2222 33.4296 10.889 32.3447 10.889L 5.96281 10.889C 4.68873 10.889 3.55328 10.0852 3.1299 8.8835L 0 0Z"/>
+<path id="path5_fill" d="M 0 0L 38.0478 0C 38.5347 0 38.8928 0.456168 38.7773 0.929111L 36.5207 10.1656C 36.2332 11.3423 35.1789 12.17 33.9676 12.17L 5.51354 12.17C 4.14861 12.17 2.9553 11.2497 2.60851 9.9296L 0 0Z"/>
+<path id="path6_stroke" d="M 0 -5.55112e-17L 19.4632 -5.55112e-17L 19.4632 -0.7509L 0 -0.7509L 0 -5.55112e-17Z"/>
+<path id="path7_stroke" d="M 0 0L 19.4632 0L 19.4632 -0.7509L 0 -0.7509L 0 0Z"/>
+<path id="path8_fill" d="M 30.0525 15.0524C 30.0525 23.3657 23.325 30.1049 15.0262 30.1049C 6.72747 30.1049 0 23.3657 0 15.0524C 0 6.7392 6.72747 0 15.0262 0C 23.325 0 30.0525 6.7392 30.0525 15.0524Z"/>
+<path id="path9_fill" d="M 43.5364 0L 55.6852 12.4903L 56.0049 15.3727L 51.8487 23.059L 22.3795 29.5679L 0 0.744052L 43.5364 0Z"/>
+<path id="path10_fill" d="M 3.51678 0L 25.8963 28.8238L 22.0598 28.8238L 0 8.00661C 0.751263 3.92273 1.65684 2.37824 3.51678 0Z"/>
+<path id="path11_fill" d="M 38.1115 0L 44.5168 14.7065L 39.3925 24.6174L 36.8304 26.216L 21.4577 23.6583L 0 0.639414L 38.1115 0Z"/>
+<path id="path12_fill" d="M 1.39325 0L 25.3757 29.5856L 22.9557 28.6923L 0.183509 6.02876C -0.0710994 3.18034 -0.328162 1.7319 1.39325 0Z"/>
+<path id="path13_fill" d="M 38.1115 0L 44.837 15.0369L 38.1115 25.9069L 34.9088 25.9069L 21.4577 23.6689L 0 0.969737L 38.1115 0Z"/>
+<path id="path14_fill" d="M 1.74806 0L 25.4884 29.791L 23.6885 29.6271L 0.0915291 6.07916C -0.162693 3.18736 0.0292619 1.75828 1.74806 0Z"/>
+<path id="path15_fill" d="M 3.83649 0L 27.1751 29.1441L 22.6992 29.1441L 0 8.32688C 0.374696 4.87292 1.21019 3.04893 3.83649 0Z"/>
+<path id="path16_fill" d="M 43.4802 0L 55.629 12.17L 55.629 15.693L 51.4728 23.3793L 23.3386 29.4643L 0 0.320264L 43.4802 0Z"/>
+</defs>
+</svg>
