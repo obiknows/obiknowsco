@@ -11,6 +11,8 @@ import (
 	"github.com/gobuffalo/buffalo/middleware/i18n"
 	"github.com/gobuffalo/packr"
 	"github.com/obiknows/obiknowsco/models"
+
+	"github.com/markbates/goth/gothic"
 )
 
 // ENV is used to help switch settings based on where the
@@ -59,9 +61,17 @@ func App() *buffalo.App {
 		// Obi Knows Co - Main Site
 		app.GET("/", HomeHandler)
 		app.GET("/work", WorkHandler)
+		app.GET("/code", CodeHandler)
+		app.GET("/crypto", CryptoHandler)
 		app.GET("/beats", BeatsHandler)
 		app.GET("/contact", BeatsHandler)
 		app.GET("/research", ResearchHandler)
+
+		// Authentication
+		app.GET("/signin", AuthPage)
+		auth := app.Group("/auth")
+		auth.GET("/{provider}", buffalo.WrapHandlerFunc(gothic.BeginAuthHandler))
+		auth.GET("/{provider}/callback", AuthCallback)
 
 		// Admin Stuffs
 		app.ServeFiles("/assets", assetsBox)
