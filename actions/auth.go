@@ -18,6 +18,7 @@ func init() {
 	)
 }
 
+// AuthCallback is a funciton to handle the call back situation
 func AuthCallback(c buffalo.Context) error {
 	user, err := gothic.CompleteUserAuth(c.Response(), c.Request())
 	if err != nil {
