@@ -58,8 +58,9 @@ func App() *buffalo.App {
 
 		// Obi Knows Co - Main Site
 		app.GET("/", HomeHandler)
-		app.GET("/beats", BeatsHandler)
 		app.GET("/work", WorkHandler)
+		app.GET("/beats", BeatsHandler)
+		app.GET("/contact", BeatsHandler)
 		app.GET("/research", ResearchHandler)
 
 		// Admin Stuffs

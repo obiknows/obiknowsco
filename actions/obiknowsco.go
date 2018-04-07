@@ -8,8 +8,7 @@ func HomeHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("index.html"))
 }
 
-// WorkHandler is a function to serve up
-// the Obi Knows portfolio single page app.
+// WorkHandler represents (/work)
 func WorkHandler(c buffalo.Context) error {
 	// Set Name
 	c.Set("name", "Obi Knows")
@@ -18,15 +17,18 @@ func WorkHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("work/workpage.html"))
 }
 
-// BeatsHandler is a function to serve up
-// the Obi Knows portfolio single page app.
+// BeatsHandler stands for (/beats)
 func BeatsHandler(c buffalo.Context) error {
 	c.Set("heading", "Obi Knows Beats")
 	return c.Render(200, r.HTML("beats/beats.html"))
 }
 
-// ResearchHandler is a function to serve up
-// the Obi Knows Research Blog
+// ResearchHandler is the code for (/research)
 func ResearchHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("research/research.html"))
+}
+
+// ContactHandler is the code for (/research)
+func ContactHandler(c buffalo.Context) error {
+	return c.Render(200, r.HTML("contact/contactpage.html"))
 }
