@@ -1,8 +1,3 @@
-Obi Knows Co
-============
-
-da platform repo
-
 # Welcome to Buffalo!
 
 Thank you for choosing Buffalo for your web development needs.
