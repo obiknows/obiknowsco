@@ -67,6 +67,9 @@ func App() *buffalo.App {
 		app.GET("/contact", BeatsHandler)
 		app.GET("/research", ResearchHandler)
 
+		// app.GET("/about", AboutHandler)
+		// app.GET("/dev", DevHandler)
+
 		// Authentication
 		app.GET("/signin", AuthPage)
 		auth := app.Group("/auth")
