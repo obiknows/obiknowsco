@@ -9,8 +9,14 @@ body {
 }
 
 .app-content {
-  padding-bottom: 2.5vh;
-  margin-bottom: 12.5vh;
+  // padding-bottom: 2.5vh;
+  margin-bottom: 10vh;
+}
+
+.colorbar {
+  background-color: #333333;
+  height: 10vh;
+  // max-height: 10vh;
 }
 
 .colorbar-logo {
@@ -19,10 +25,6 @@ body {
   
 }
 
-.colorbar-bg {
-  background-color: #333333;
-  // max-height: 11vh;
-}
 
 .content {
   margin-bottom: 12.5vh;
