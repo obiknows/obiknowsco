@@ -36,7 +36,7 @@ func ResearchHandler(c buffalo.Context) error {
 
 // ContactHandler is the code for (/contact)
 func ContactHandler(c buffalo.Context) error {
-	return c.Render(200, r.HTML("contact/contactpage.html"))
+	return c.Render(200, r.HTML("contact/index.html"))
 }
 
 // CodeHandler is the code for (/code)

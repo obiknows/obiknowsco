@@ -64,10 +64,10 @@ func App() *buffalo.App {
 		app.GET("/code", CodeHandler)
 		app.GET("/crypto", CryptoHandler)
 		app.GET("/beats", BeatsHandler)
-		app.GET("/contact", BeatsHandler)
+		app.GET("/contact", ContactHandler)
 		app.GET("/research", ResearchHandler)
+		app.GET("/about", AboutHandler)
 
-		// app.GET("/about", AboutHandler)
 		// app.GET("/dev", DevHandler)
 
 		// Authentication
