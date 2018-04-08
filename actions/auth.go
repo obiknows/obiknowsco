@@ -30,5 +30,6 @@ func AuthCallback(c buffalo.Context) error {
 
 // AuthPage stands for the sign in (/signin)
 func AuthPage(c buffalo.Context) error {
+	c.Set("isVerified", false)
 	return c.Render(200, r.HTML("auth/signin.html"))
 }

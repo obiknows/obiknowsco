@@ -48,3 +48,8 @@ func CodeHandler(c buffalo.Context) error {
 func CryptoHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("crypto/index.html"))
 }
+
+// PlaygroundHandler is the code for the play go round
+func PlaygroundHandler(c buffalo.Context) error {
+	return c.Render(200, r.HTML("playground/play.html"))
+}

@@ -71,12 +71,13 @@ func App() *buffalo.App {
 		// app.GET("/dev", DevHandler)
 
 		// Authentication
-		app.GET("/signin", AuthPage)
 		auth := app.Group("/auth")
+		auth.GET("/", AuthPage)
 		auth.GET("/{provider}", buffalo.WrapHandlerFunc(gothic.BeginAuthHandler))
 		auth.GET("/{provider}/callback", AuthCallback)
 
 		// Admin Stuffs
+		app.GET("/play", PlaygroundHandler)
 		app.ServeFiles("/assets", assetsBox)
 		app.GET("/routes", RoutesRoutes)
 	}
