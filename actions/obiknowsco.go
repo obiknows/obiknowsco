@@ -48,3 +48,8 @@ func CodeHandler(c buffalo.Context) error {
 func CryptoHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("crypto/index.html"))
 }
+
+// SebiHandler default implementation.
+func SebiHandler(c buffalo.Context) error {
+	return c.Render(200, r.HTML("sebi/index.html"))
+}

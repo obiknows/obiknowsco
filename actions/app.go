@@ -11,8 +11,6 @@ import (
 	"github.com/gobuffalo/buffalo/middleware/i18n"
 	"github.com/gobuffalo/packr"
 	"github.com/obiknows/obiknowsco/models"
-
-	"github.com/markbates/goth/gothic"
 )
 
 // ENV is used to help switch settings based on where the
@@ -67,14 +65,18 @@ func App() *buffalo.App {
 		app.GET("/contact", ContactHandler)
 		app.GET("/research", ResearchHandler)
 		app.GET("/about", AboutHandler)
-
+		app.GET("/sebi", SebiHandler)
 		// app.GET("/dev", DevHandler)
 
+		// Webstore
+		store := app.Group("/store")
+		store.GET("/", StoreIndex)
+
 		// Authentication
-		auth := app.Group("/auth")
-		auth.GET("/", AuthPage)
-		auth.GET("/{provider}", buffalo.WrapHandlerFunc(gothic.BeginAuthHandler))
-		auth.GET("/{provider}/callback", AuthCallback)
+		// auth := app.Group("/auth")
+		// auth.GET("/", AuthPage)
+		// auth.GET("/{provider}", buffalo.WrapHandlerFunc(gothic.BeginAuthHandler))
+		// auth.GET("/{provider}/callback", AuthCallback)
 
 		// Admin Stuffs
 		app.GET("/play", PlaygroundHandler)
