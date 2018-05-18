@@ -26,6 +26,10 @@
     "style-loader": "~0.20.1",
     "uglifyjs-webpack-plugin": "~0.4.6",
     "url-loader": "~0.6.2",
+    "vue": "^2.5.16",
+    "vue-loader": "^15.0.11",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.16",
     "webpack": "~3.10.0",
     "webpack-manifest-plugin": "~1.2.1"
   }
