@@ -52,3 +52,13 @@ func CryptoHandler(c buffalo.Context) error {
 func SebiHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("sebi/index.html"))
 }
+
+// FilmsHandler default implementation.
+func FilmsHandler(c buffalo.Context) error {
+	return c.Render(200, r.HTML("films/index.html"))
+}
+
+// KoboHandler default implementation.
+func KoboHandler(c buffalo.Context) error {
+	return c.Render(200, r.HTML("kobo/index.html"))
+}

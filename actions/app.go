@@ -65,8 +65,13 @@ func App() *buffalo.App {
 		app.GET("/contact", ContactHandler)
 		app.GET("/research", ResearchHandler)
 		app.GET("/herbs", HerbsHandler)
+		app.GET("/films", FilmsHandler)
 		app.GET("/sebi", SebiHandler)
+		app.GET("/kobo", KoboHandler)
 		// app.GET("/dev", DevHandler)
+
+		// Reserach
+		app.GET("/data", DataIndex)
 
 		// Webstore
 		store := app.Group("/store")
