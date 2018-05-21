@@ -8,12 +8,6 @@ func HomeHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("index.html"))
 }
 
-// AboutHandler is t default function to serve up
-// a home page.
-func AboutHandler(c buffalo.Context) error {
-	return c.Render(200, r.HTML("about.html"))
-}
-
 // WorkHandler represents (/work)
 func WorkHandler(c buffalo.Context) error {
 	// Set Name
@@ -25,13 +19,18 @@ func WorkHandler(c buffalo.Context) error {
 
 // BeatsHandler stands for (/beats)
 func BeatsHandler(c buffalo.Context) error {
-	c.Set("heading", "Obi Knows Beats")
+	c.Set("heading", "Beats")
 	return c.Render(200, r.HTML("beats/beats.html"))
 }
 
 // ResearchHandler is the code for (/research)
 func ResearchHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("research/research.html"))
+}
+
+// HerbsHandler is the code for (/research)
+func HerbsHandler(c buffalo.Context) error {
+	return c.Render(200, r.HTML("herbs/index.html"))
 }
 
 // ContactHandler is the code for (/contact)
