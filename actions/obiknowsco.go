@@ -1,10 +1,16 @@
 package actions
 
-import "github.com/gobuffalo/buffalo"
+import (
+	"github.com/gobuffalo/buffalo"
+	"github.com/polera/publicip"
+)
 
 // HomeHandler is t default function to serve up
 // a home page.
 func HomeHandler(c buffalo.Context) error {
+	myIPAddr, _ := publicip.GetIP()
+
+	c.Set("my-ip", myIPAddr)
 	return c.Render(200, r.HTML("index.html"))
 }
 
@@ -61,4 +67,9 @@ func FilmsHandler(c buffalo.Context) error {
 // KoboHandler default implementation.
 func KoboHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("kobo/index.html"))
+}
+
+// AboutHandler default implementation.
+func AboutHandler(c buffalo.Context) error {
+	return c.Render(200, r.HTML("about.html"))
 }

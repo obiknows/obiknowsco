@@ -68,6 +68,7 @@ func App() *buffalo.App {
 		app.GET("/films", FilmsHandler)
 		app.GET("/sebi", SebiHandler)
 		app.GET("/kobo", KoboHandler)
+		app.GET("/about", AboutHandler)
 		// app.GET("/dev", DevHandler)
 
 		// Reserach
