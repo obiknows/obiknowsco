@@ -38,5 +38,4 @@ Good luck!
 
 Remember to add in Github Creds 
 - (create an OAuth app on Github, set callback URL to localhost or your domain)
-- add in to `.env` GITHUB_KEY & GITHUB_SECRET
-- restart app and 
+- add in to `.env` GITHUB_KEY & GITHUB_SECRET & SESSION_SECRET (if you get securecookie hash error)
