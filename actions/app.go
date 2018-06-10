@@ -69,14 +69,10 @@ func App() *buffalo.App {
 		app.GET("/sebi", SebiHandler)
 		app.GET("/kobo", KoboHandler)
 		app.GET("/about", AboutHandler)
-		// app.GET("/dev", DevHandler)
-
-		// Reserach
+		// Raw Data & Visualizations
 		app.GET("/data", DataIndex)
-
 		// Webstore
-		store := app.Group("/store")
-		store.GET("/", StoreIndex)
+		app.GET("/store", StoreIndex)
 
 		// Authentication
 		// auth := app.Group("/auth")

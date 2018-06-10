@@ -1,6 +1,6 @@
-# Welcome to Buffalo!
+# Welcome to Obi Knows Co
 
-Thank you for choosing Buffalo for your web development needs.
+Thank you for choosing to look at Obi Knows Co, the repo.
 
 ## Database Setup
 

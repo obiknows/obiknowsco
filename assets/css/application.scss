@@ -1,5 +1,5 @@
 @import "~bootstrap/scss/bootstrap.scss";
-@import "~font-awesome/css/font-awesome.css";
+// @import "~font-awesome/css/font-awesome.css";  // big AF ~800kB
 
 @import "tachyons.min.css";
 
@@ -19,7 +19,7 @@ body {
 
 .colorbar {
   background-color: #333333;
-  height: 10vh;
+  // height: 10vh;
   min-height: 50px;
   // max-height: 10vh;
 }
