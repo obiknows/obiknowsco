@@ -34,9 +34,9 @@ func ResearchHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("research/research.html"))
 }
 
-// HerbsHandler is the code for (/research)
-func HerbsHandler(c buffalo.Context) error {
-	return c.Render(200, r.HTML("herbs/index.html"))
+// HealthHandler is the code for (/health)
+func HealthHandler(c buffalo.Context) error {
+	return c.Render(200, r.HTML("health/health.html"))
 }
 
 // ContactHandler is the code for (/contact)
