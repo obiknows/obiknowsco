@@ -23,10 +23,10 @@ func WorkHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("work/index.html"))
 }
 
-// BeatsHandler stands for (/beats)
-func BeatsHandler(c buffalo.Context) error {
-	c.Set("heading", "Beats")
-	return c.Render(200, r.HTML("beats/beats.html"))
+// SoundsHandler stands for (/sounds)
+func SoundsHandler(c buffalo.Context) error {
+	c.Set("heading", "Sounds")
+	return c.Render(200, r.HTML("sounds/sounds.html"))
 }
 
 // ResearchHandler is the code for (/research)

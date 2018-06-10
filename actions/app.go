@@ -61,7 +61,7 @@ func App() *buffalo.App {
 		app.GET("/work", WorkHandler)
 		app.GET("/code", CodeHandler)
 		app.GET("/crypto", CryptoHandler)
-		app.GET("/beats", BeatsHandler)
+		app.GET("/sounds", SoundsHandler)
 		app.GET("/contact", ContactHandler)
 		app.GET("/research", ResearchHandler)
 		app.GET("/herbs", HerbsHandler)
