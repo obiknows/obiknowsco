@@ -1,10 +1,21 @@
 @import "~bootstrap/scss/bootstrap.scss";
 // @import "~font-awesome/css/font-awesome.css";  // big AF ~800kB
 
+// Add in Baloo 
+@import url('https://fonts.googleapis.com/css?family=Baloo');
+
 @import "./tachyons.min.css";
+ 
+/*
+  FONTS
+*/
+.baloo {
+  font-family: 'Baloo', cursive;
+}
 
 body {
   // background: #333333;
+  
   background: whitesmoke;
 }
 
@@ -30,7 +41,6 @@ body {
   // height: 3.639em;
   
 }
-
 
 .content {
   margin-bottom: 12.5vh;
