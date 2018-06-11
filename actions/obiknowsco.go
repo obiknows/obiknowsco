@@ -64,6 +64,11 @@ func KoboHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("kobo/index.html"))
 }
 
+// SitesHandler default implementation.
+func SitesHandler(c buffalo.Context) error {
+	return c.Render(200, r.HTML("sites/index.html"))
+}
+
 // AboutHandler default implementation.
 func AboutHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("about.html"))
