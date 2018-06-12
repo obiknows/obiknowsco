@@ -84,6 +84,7 @@ func App() *buffalo.App {
 		app.GET("/play", PlaygroundHandler)
 		app.ServeFiles("/assets", assetsBox)
 		app.GET("/routes", RoutesRoutes)
+
 	}
 
 	return app
