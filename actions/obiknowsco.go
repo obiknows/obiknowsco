@@ -73,3 +73,9 @@ func SitesHandler(c buffalo.Context) error {
 func AboutHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("about.html"))
 }
+
+// DataIndex default implementation.
+func DataIndex(c buffalo.Context) error {
+
+	return c.Render(200, r.HTML("data/index.html"))
+}
