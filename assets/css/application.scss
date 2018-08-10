@@ -3,7 +3,10 @@
 
 // Add in Baloo 
 @import url('https://fonts.googleapis.com/css?family=Baloo');
+// Add in Didact Gothic
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
 
+// Tachyons 
 @import "./tachyons.min.css";
  
 /*
@@ -13,6 +16,11 @@
   font-family: 'Baloo', cursive;
 }
 
+.didact {
+  font-family: 'Didact Gothic', sans-serif;
+  font-weight: 600;
+}
+
 body {
   // background: #333333;
   background: white;
@@ -20,8 +28,8 @@ body {
 }
 
 .app {
-  height: fit-content;
-  margin-bottom: 12.5vh;
+  // height: fit-content;
+  // margin-bottom: 12.5vh;
 }
 
 .home {
