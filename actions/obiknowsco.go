@@ -18,13 +18,9 @@ func HomeHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("home.html"))
 }
 
-// WorkHandler represents (/work)
-func WorkHandler(c buffalo.Context) error {
-	// Set Name
-	c.Set("name", "Obi Knows")
-	c.Set("jobs", []string{"Producer", "Designer", "Developer", "Artist", "Researcher"})
-
-	return c.Render(200, r.HTML("work/index.html"))
+// CodeHandler is the code for (/code)
+func CodeHandler(c buffalo.Context) error {
+	return c.Render(200, r.HTML("code/index.html"))
 }
 
 // SoundsHandler stands for (/sounds)
@@ -38,6 +34,20 @@ func ResearchHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("research/research.html"))
 }
 
+// DesignHandler is the code for (/design)
+func DesignHandler(c buffalo.Context) error {
+	return c.Render(200, r.HTML("design/index.html"))
+}
+
+// WorkHandler represents (/work)
+func WorkHandler(c buffalo.Context) error {
+	// Set Name
+	c.Set("name", "Obi Knows")
+	c.Set("jobs", []string{"Producer", "Designer", "Developer", "Artist", "Researcher"})
+
+	return c.Render(200, r.HTML("work/index.html"))
+}
+
 // HealthHandler is the code for (/health)
 func HealthHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("health/health.html"))
@@ -46,11 +56,6 @@ func HealthHandler(c buffalo.Context) error {
 // ContactHandler is the code for (/contact)
 func ContactHandler(c buffalo.Context) error {
 	return c.Render(200, r.HTML("contact/index.html"))
-}
-
-// CodeHandler is the code for (/code)
-func CodeHandler(c buffalo.Context) error {
-	return c.Render(200, r.HTML("code/index.html"))
 }
 
 // CryptoHandler is the code for (/crypto)
