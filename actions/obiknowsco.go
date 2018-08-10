@@ -2,16 +2,20 @@ package actions
 
 import (
 	"github.com/gobuffalo/buffalo"
-	"github.com/polera/publicip"
 )
 
-// HomeHandler is t default function to serve up
-// a home page.
-func HomeHandler(c buffalo.Context) error {
-	myIPAddr, _ := publicip.GetIP()
+// IndexHandler is the default function to serve up the entry page.
+func IndexHandler(c buffalo.Context) error {
+	// dont show the nav bar
+	c.Set("no-nav", true)
 
-	c.Set("my-ip", myIPAddr)
 	return c.Render(200, r.HTML("index.html"))
+}
+
+// HomeHandler is the default function to serve up a home page.
+func HomeHandler(c buffalo.Context) error {
+
+	return c.Render(200, r.HTML("home.html"))
 }
 
 // WorkHandler represents (/work)

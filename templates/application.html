@@ -22,7 +22,14 @@
       </div>
       
     </div>
-    <%= partial("navbar.html") %>
+
+    
+    <%= if (!no-nav) { %>
+      <!-- when no-nav is set, dont show the nav bar -->
+      <%= partial("navbar.html") %>
+    <% } %>
+
+    <!-- add in the navbar -->
     
     <%= javascriptTag("application.js") %>
   </body>
