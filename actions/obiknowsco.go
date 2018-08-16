@@ -4,12 +4,12 @@ import (
 	"github.com/gobuffalo/buffalo"
 )
 
-// IndexHandler is the default function to serve up the entry page.
-func IndexHandler(c buffalo.Context) error {
+// EntryHandler is the default function to serve up the entry page.
+func EntryHandler(c buffalo.Context) error {
 	// dont show the nav bar
 	c.Set("no-nav", true)
 
-	return c.Render(200, r.HTML("index.html"))
+	return c.Render(200, r.HTML("entry.html"))
 }
 
 // HomeHandler is the default function to serve up a home page.

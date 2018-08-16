@@ -57,7 +57,7 @@ func App() *buffalo.App {
 		app.Use(T.Middleware())
 
 		// Obi Knows Co - Main Site
-		app.GET("/", IndexHandler)
+		app.GET("/", EntryHandler)
 		app.GET("/home", HomeHandler)
 		app.GET("/code", CodeHandler)
 		app.GET("/sounds", SoundsHandler)
