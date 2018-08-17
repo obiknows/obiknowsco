@@ -80,6 +80,9 @@ func SitesHandler(c buffalo.Context) error {
 
 // AboutHandler default implementation.
 func AboutHandler(c buffalo.Context) error {
+	// dont show the nav bar
+	c.Set("no-nav", true)
+
 	return c.Render(200, r.HTML("about.html"))
 }
 
