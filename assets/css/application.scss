@@ -9,6 +9,9 @@
 // Tachyons 
 @import "./tachyons.min.css";
  
+.no-ul {
+  text-decoration: none !important;
+}
 
 html, body {
     max-width: 100%;

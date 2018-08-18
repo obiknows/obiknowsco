@@ -36,7 +36,10 @@ func ResearchHandler(c buffalo.Context) error {
 
 // DesignHandler is the code for (/design)
 func DesignHandler(c buffalo.Context) error {
-	return c.Render(200, r.HTML("design/index.html"))
+	// dont show the nav bar
+	c.Set("no-nav", true)
+
+	return c.Render(200, r.HTML("design/entry.html"))
 }
 
 // WorkHandler represents (/work)
@@ -80,8 +83,6 @@ func SitesHandler(c buffalo.Context) error {
 
 // AboutHandler default implementation.
 func AboutHandler(c buffalo.Context) error {
-	// dont show the nav bar
-	c.Set("no-nav", true)
 
 	return c.Render(200, r.HTML("about.html"))
 }
